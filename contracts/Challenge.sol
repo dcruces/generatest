@@ -16,7 +16,7 @@ contract Challenge
 
  using SafeMath for uint256;
 
-  constructor() public { }
+  constructor() { }
 
 // receives an array of bytes and returns how much total gas was burnt in the transaction
 function receiveArray(bytes memory _array) public returns (uint _gasBurnt)
