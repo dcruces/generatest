@@ -1,0 +1,12 @@
+{
+  "name": "generatest",
+  "scripts": {
+    "start:ganache": "npx ganache-cli -q &",
+    "stop:ganache": "kill -9 $(lsof -t -i:8545)",
+    "test": "scripts/test"
+  },
+  "dependencies": {
+    "ganache-cli": "^6.12.2",
+    "truffle": "^5.4.3"
+  }
+}
