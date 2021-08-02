@@ -16,6 +16,7 @@ Estimated time: 2-3 hours
 ------------ 0 ---------------------
 
 Step by step to run: 
+
 1- Make sure to have your local port TCP 8545 free as this will be used by the local blockchain (ganache-cli)
 
 2- Position in the root of the project; and execute 'yarn test'
