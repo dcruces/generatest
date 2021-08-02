@@ -17,6 +17,7 @@ Estimated time: 2-3 hours
 # STEPS TO RUN
 
 1- Pre-requisites: 
+
    a- node shall be installed, version v16.2.0 or higher
    
    b- yarn shall be installed, version 1.22.10 or higher
