@@ -18,8 +18,11 @@ Estimated time: 2-3 hours
 
 1- Pre-requisites: 
    node shall be installed, version v16.2.0 or higher
+   
    yarn shall be installed, version 1.22.10 or higher
+   
    Linux or Mac computer (it was not tested on MS Windows so can't guarantee will work in this target OS)
+   
 
 2- Make sure to have your local port TCP 8545 free as this will be used by the local blockchain (ganache-cli)
 
