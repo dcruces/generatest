@@ -21,7 +21,8 @@ Estimated time: 2-3 hours
    
    b- yarn shall be installed, version 1.22.10 or higher
    
-   c- Use a Linux or Mac computer (it was not tested on MS Windows so can't guarantee will work in this target OS)
+   c- Use a Linux or Mac computer (it was not tested on MS Windows so can't guarantee will work in this target OS. To make it work in 
+      any target platform I would use docker, but this it outside the scope of this challenge)
    
 
 2- Make sure to have your local port TCP 8545 free as this will be used by the local blockchain (ganache-cli)
