@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: MIT
-// pragma solidity >= 0.5.0 <= 0.7.0;
+
 pragma solidity ^0.8.0 ; 
 
 // From the Openzeppelin team, library below to check for overflows and underflows in all math operations
@@ -29,8 +29,6 @@ function receiveArray(bytes memory _array) public returns (uint _gasBurnt)
      
         // calculate the total gas that was recceived in this transaction so we can burn
         // enough to be within the limits of the requirement: between 100k and 120k
-        
-        // return ( gasleft() ) ; // 22259 one element, spent till here //  22271 with 2 elements
 
     	uint  gasAtinit = ( gasleft().add(22738) ).add( ( _array.length -1 ).mul(12) ) ; 
 
@@ -43,14 +41,13 @@ function receiveArray(bytes memory _array) public returns (uint _gasBurnt)
 
     	
     	uint burntGas = 0 ; 
-        uint gasToBurn = uint(100000).sub(gasAtinit.sub( gasleft() )) ; 
+      uint gasToBurn = uint(100000).sub(gasAtinit.sub( gasleft() )) ; 
 
-// each cycle below costs 179 weis
-// we burn gas below until the target objective 100k is met
+    // we burn gas below until the target objective 100k is met
 
 		for (burntGas; burntGas < gasToBurn ; burntGas = burntGas.add(300) )
-		{ // do nothing, just iterating to spend weis on each cycle till we get to the target amount  
-	    } 
+		  { // do nothing, just iterating to spend weis on each cycle till we get to the target amount  
+	     } 
 
 // returns the gas spent
      return ( gasAtinit.sub( gasleft() ) ) ; 
