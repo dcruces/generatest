@@ -14,11 +14,15 @@ Bonus: Minimize direct project dependencies
 Estimated time: 2-3 hours
 
 ------------ 0 ---------------------
+# STEPS TO RUN
 
-Step by step to run: 
+1- Pre-requisites: 
+   node shall be installed, version v16.2.0 or higher
+   yarn shall be installed, version 1.22.10 or higher
+   Linux or Mac computer (it was not tested on MS Windows so can't guarantee will work in this target OS)
 
-1- Make sure to have your local port TCP 8545 free as this will be used by the local blockchain (ganache-cli)
+2- Make sure to have your local port TCP 8545 free as this will be used by the local blockchain (ganache-cli)
 
-2- Position in the root of the project; and execute 'yarn test'
+3- Position in the root of the project; and execute 'yarn test'
 
 
