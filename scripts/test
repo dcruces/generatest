@@ -1,5 +1,6 @@
 
 echo "This script was tested on Mac, should work on UNIX but 'undefined' in MS Windows"
+yarn install 
 echo sleep 10
 echo "Initiating local blockchain ganache-cli" 
 npx ganache-cli -q &
