@@ -3,10 +3,8 @@ echo "This script was tested on Mac, should work on UNIX but 'undefined' in MS W
 yarn install 
 echo sleep 10
 echo "Initiating local blockchain ganache-cli" 
-npx ganache-cli -q &
+npx ganache-cli -m "stereo consider quality wild fat farm symptom bundle laundry side one lemon" --account '0x5c7a050c7b0e3a6896e9667a6dff3a6b389c665aaed218c352071890c05520ee,1000000000000000000' -q &
 echo "Waiting for startup" 
 sleep 5
 echo "Executing tests" 
 truffle test
-echo "Stopping local blockchain ganache-cli" 
-kill -9 $(lsof -t -i:8545)
