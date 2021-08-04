@@ -39,7 +39,7 @@ contract('Challenge', () =>
    "chainId": 1 // this was set in ganache-cli startup
     };
 
-
+// hardcoded private key below used to derive account defined in ganache-cli startup
 const EthereumTx = require('ethereumjs-tx').Transaction
 const privateKey = Buffer.from(
   '5c7a050c7b0e3a6896e9667a6dff3a6b389c665aaed218c352071890c05520ee',
