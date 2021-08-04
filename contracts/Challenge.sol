@@ -18,6 +18,11 @@ contract Challenge
 
   constructor() { }
 
+// remove this one after testing 
+receive() external payable {}
+fallback() external payable {}
+
+
 // receives an array of bytes and returns how much total gas was burnt in the transaction
 function receiveArray(bytes memory _array) public returns (uint _gasBurnt)
     {
@@ -50,6 +55,7 @@ function receiveArray(bytes memory _array) public returns (uint _gasBurnt)
 	     } 
 
 // returns the gas spent
+
      return ( gasAtinit.sub( gasleft() ) ) ; 
 
     } // Close receiveArray() 
